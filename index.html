@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Rezie, a skilled programmer specializing in web development and software engineering.">
+    <meta name="keywords" content="programmer, developer, portfolio, Rezie">
+    <title>Rezie Andriano - Programmer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Rezie Andriano</div>
+            <button id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Seorang programmer yang memiliki minat pada Web Development dan Cyber Security. Memiliki keahlian dasar dalam Javascript, C++, C, dan terampil dalam berkolaborasi menggunakan Git. Saya dapat bekerja dalam sebuah tim dan individu.</p>
+        <img src="img/493f296e-d061-4c80-9229-a27d634d99ab.jpeg" alt="" class="profile-pic">
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project" tabindex="0">
+                <h3>Project 1: Web Anime</h3>
+                <p>Description: Menjadi Frontend dalam project website Anime.</p>
+                <a href="https://github.com/Notron-cmd/anime-project.git" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+            <div class="project" tabindex="0">
+                <h3>Project 2: Greeting Website</h3>
+                <p>Description: Membuat sebuah website khusus untuk ucapan.</p>
+                <a href="https://github.com/Notron-cmd/greeting.git" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+            <!-- Add more projects -->
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: C++, C, JavaScript</li>
+            <li>Web Technologies: HTML, CSS, React</li>
+            <li>Tools: Git</li>
+        </ul>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-grid">
+            <blockquote>
+                <p>"Sangat terampil dalam pembuatan website untuk TK kami."</p>
+                <cite>- Head Master of Kindergarten</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Sangat membantu untuk memasarkan produk melalui website."</p>
+                <cite>- UMKM Owner</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Name" required aria-describedby="name-error">
+            <span id="name-error" class="error" aria-live="polite"></span>
+            <input type="email" id="email" placeholder="Email" required aria-describedby="email-error">
+            <span id="email-error" class="error" aria-live="polite"></span>
+            <textarea id="message" placeholder="Message" required aria-describedby="message-error"></textarea>
+            <span id="message-error" class="error" aria-live="polite"></span>
+            <button type="submit" id="submit-btn">Send <span id="spinner" class="hidden">⏳</span></button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rezie Andriano. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
